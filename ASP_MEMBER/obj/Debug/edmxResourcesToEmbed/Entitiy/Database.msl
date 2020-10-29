@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="databaseModelStoreContainer" CdmEntityContainer="databaseEntities">
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="databaseModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="image_type" ColumnName="image_type" />
+          <ScalarProperty Name="id" ColumnName="Id" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessTokens">
+      <EntityTypeMapping TypeName="databaseModel.AccessToken">
+        <MappingFragment StoreEntitySet="AccessTokens">
+          <ScalarProperty Name="memberID" ColumnName="memberID" />
+          <ScalarProperty Name="exprise" ColumnName="exprise" />
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
